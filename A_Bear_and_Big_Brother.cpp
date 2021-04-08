@@ -1,11 +1,11 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-    int a,A,n=0;
-    cin>>a>>A;
-    while(a<=A){
+    int a,B,n=0;
+    cin>>a>>B;
+    while(a<=B){
        a *=3;
-       A *=2;
+       B *=2;
        n++;
     }
     cout<<n;
