@@ -17,12 +17,12 @@ int main(){
         else{
             m[a[i]]++;
         }
-        if(m[a[i]]>n/k){
-            cout<<a[i]<<" "<<m[a[i]]<<"\n";
-        }
-        else{
-            continue;
+    }
+        for(auto x: m){
+        if(x.second>n/k){
+            cout<<x.first<<" "<<x.second<<"\n";
         }
     }
+    
     return 0;
 }
