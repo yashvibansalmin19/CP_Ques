@@ -68,20 +68,17 @@ int main(){
     for(int i=0; i<26; i++){
         cin>>a[i];
     }
-    int maxVal = INT_MIN;
-    for(int i=0; i<26; i++){
-        if(a[i]>maxVal){
-            maxVal=a[i];
-        }
-    }
-    int result_1=0, result_2=0;
+    int result_1=0;
     for(int i=0; i<s.size(); i++){
         char m = s[i];
        result_1 += (i+1)*(val (a,m));
     }
+    sort(a,a+26);
+    
+    int maxVal = a[25];
     for(int i=s.size()+1; i<=s.size()+k; i++){
-       result_2 += i;
+       result_1 += i*maxVal;
     }
-    cout<< result_1 + (result_2*maxVal);
-return 0;
+    cout<< result_1;
+    return 0;
 }
