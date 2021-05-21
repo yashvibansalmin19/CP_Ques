@@ -18,12 +18,12 @@ int main(){
         cost[i]=INT_MAX;
     }
     for(int i=1; i<=k; i++){
-        int x,a;
+        int x;
         cin>>x;
         while(x--){
             int a;
             cin>>a;
-            grp[a]=i;
+            grp[a]=i; //putting words in group with same meaning
             cost[i]= min(cost[i],arr[a]);
         }
     }
