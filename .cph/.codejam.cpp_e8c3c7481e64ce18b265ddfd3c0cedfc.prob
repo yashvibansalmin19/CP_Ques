@@ -1,0 +1,1 @@
+{"name":"Local: codejam","url":"d:\\CP_Ques\\codejam.cpp","tests":[{"id":1618670975554,"input":"3\n4\n10 20 10 25\n5\n7 7 7 7 7\n2\n100 1","output":"7\n5\n3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\CP_Ques\\codejam.cpp","group":"local","local":true}
